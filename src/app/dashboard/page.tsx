@@ -3,7 +3,7 @@ import React from 'react'
 
 type Props = {}
 
-const page = (props: Props) => {
+const Dashboard = (props: Props) => {
   return (
     <div className='p-8'>
         <Button>Hello</Button>
@@ -11,4 +11,4 @@ const page = (props: Props) => {
   )
 }
 
-export default page
+export default Dashboard
