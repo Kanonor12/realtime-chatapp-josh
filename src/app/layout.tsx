@@ -1,5 +1,7 @@
 import ClientOnly from '@/components/ClientOnly'
 import './globals.css'
+import Navbar from '@/components/navbar/Navbar'
+import Search from '@/components/navbar/Search'
 
 export const metadata = {
   title: 'Create Next App',
@@ -13,9 +15,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>
+      <body>       
         <ClientOnly>
-           {children}
+           <Navbar /> 
+           <Search/>
+          {children}
         </ClientOnly>
        
       </body>
